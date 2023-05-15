@@ -52,7 +52,7 @@ public class Curriculum_New_1_4 {
 	     // ・倍精度浮動小数点数型		 10.5
     	 double1 = 10.5d;
 	     // ・文字型                   a
-    	 char1 = 'a'
+    	 char1 = 'a';
 	     // ・文字列型              	 ハロー
     	 string1 = "ハロー";
 	     // ・ブーリアン型          	 true
@@ -84,6 +84,5 @@ public class Curriculum_New_1_4 {
  
  		System.out.println("ハローJAVA" + (num + num1));
  		 
-     }
-
-}
+ 		
+     	

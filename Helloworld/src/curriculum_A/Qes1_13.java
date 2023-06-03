@@ -132,12 +132,18 @@ public class Qes1_13 {
 		 * [詳細]6で宣言した変数に再代入しコンソールに出力させる
 		 */
 		name = "鈴木一郎";
+		System.out.println("初めまして" + name + "です");
 		age = 24;
+		System.out.println("年齢は" + age + "歳です");
 		height = 168.5;
+		System.out.println("身長" + height + "cmです");
 		weight = 64.2;
+		System.out.println("体重は" + weight + "kgです");
 		food = "オムライス";
+		System.out.println("好きな食べ物は" + food + "です");
 		bmi = 22.6;
-		System.out.println("\n");
+		System.out.println("BMIは" + bmi + "です" + "\n");
+	
 
 		//Q9
 		/*
@@ -148,15 +154,19 @@ public class Qes1_13 {
 //		name = 鈴木一郎
 		System.out.println("初めまして" + name + "です");
 //		age = 24
-		System.out.println("年齢は" + age + age + "です");
+		age += 24;
+		System.out.println("年齢は" + age + "歳です");
 //		height = 168.5
-		System.out.println("身長" + height + height + "cmです");
+		height += 168.5;
+		System.out.println("身長" + height + "cmです");
 //		weight = 64.2
-		System.out.println("体重は" + weight + weight + "kgです");
+		weight += 64.2;
+		System.out.println("体重は" + weight + "kgです");
 //		food = オムライス
 		System.out.println("好きな食べ物は" + food + "です");
 //		bmi= 22.6
-		System.out.println("BMIは" + bmi + "です" + "\n");
+		bmi -= 11.3;
+		System.out.println("BMIは" + Math.round(bmi * 100) /100 + "です" + "\n");
 
 		//Q10
 		/*

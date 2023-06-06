@@ -7,23 +7,23 @@ public class Qes1_13 {
 
 		// Q1 
 
-//		バイト型変数 by を宣言
+//		バイト型変数を宣言
 		byte by;
-//		短整数型 sh を宣言
+//		短整数型を宣言
 		short sh;
-//		整数型 in を宣言
+//		整数型を宣言
 		int in;
-//		長整数型 lo を宣言
+//		長整数型を宣言
 		long lo;
-//		単精度浮動小数点数型 fl　を宣言
+//		単精度浮動小数点数型を宣言
 		float fl;
-//		倍精度浮動小数点数型 do を宣言
+//		倍精度浮動小数点数を宣言
 		double dou;
-//		文字型　ch　を宣言
+//		文字型を宣言
 		char ch;
-//		文字列型　st　を宣言
+//		文字列型を宣言
 		String st;
-//		ブーリアン型 bo を宣言
+//		ブーリアン型を宣言
 		boolean bo;
 		
 		// Q2 それぞれのローカル変数をローカル内でそれぞれの初期値を代入し初期化してください
@@ -124,6 +124,11 @@ public class Qes1_13 {
 		//BMI値の出力
 		BigDecimal bd = new BigDecimal(bmi);
 		BigDecimal bdBmi = bd.setScale(1, RoundingMode.UP);
+		System.out.println("初めまして" + name + "です");
+		System.out.println("年齢は" + age + "歳です");
+		System.out.println("身長は" + height + "cmです");
+		System.out.println("体重は" + weight + "kgです");
+		System.out.println("好きな食べ物は" + food + "です" + "\n");
 		System.out.println(bdBmi.doubleValue() +"\n");
 
 		//Q8
@@ -173,27 +178,30 @@ public class Qes1_13 {
 		 * [概要]25歳以上ならtrueを出力させる
 		 * [詳細]8で使用した年齢が25歳以上ならtrueが出力させる。ただしif文は使わない
 		 */
-
-		int yourAge = 24;
-		bo = (yourAge >= 25);
+		
+		age = 24;
+		bo = (age >= 25);
 		System.out.println(bo);
 		System.out.println("\n");
 
-		//			Q11
+		//Q11
 		/*
 		 * [概要]文字列型に変換し繋げて出力
 		 * [詳細]8で使用した【年齢・身長・体重】を文字列型に型変換し繋げて出力させる
 		 */
-//		age = 24
+		//age = 24
 		String strAge = String.valueOf(age);
 		System.out.println(strAge);
+		//height = 168.5
 		String strHeight = String.valueOf(height);
 		System.out.println(strHeight);
+		//weight = 64.2
 		String strWeight = String.valueOf(weight);
 		System.out.println(weight);
+		//上記3つを常げて出力
 		System.out.println(strAge + strHeight + strWeight + "\n");
 
-		//		     Q12
+		//Q12
 		/*
 		 * [概要]整数型に変換して出力
 		 * [詳細]11で変換した【年齢・身長】を整数型に変換して出力させる
@@ -204,7 +212,7 @@ public class Qes1_13 {
 		System.out.println(intHeight + "\n");
 		
 
-		//			Q13
+		//Q13
 		/*
 		 * [概要]trueを出力
 		 * [詳細]12で変換した【年齢・身長】で【年齢が25もしくは身長が160以上】であればtrueを出力させる。ただしif文は使わない

@@ -47,6 +47,7 @@ public class Qes1_13 {
 		bo = false;
 
 		// Q3 初期化をしたそれぞれの変数に下記の値を代入してください
+
 		// ・バイト型                 10
 		by = 10;
 		// ・短整数型                 100
@@ -68,7 +69,7 @@ public class Qes1_13 {
 		
 		// Q4 下記の通りにコンソール出力されるようにしてください
 		// 必ず変数を使用すること
-		System.out.println("『問4』");
+
 		// 11110
 		System.out.println(by + sh + in + lo);
 		// 20.0
@@ -88,8 +89,7 @@ public class Qes1_13 {
 		// Q5 
 		// 次のプログラムを実行すると「ハローJAVA2023」という結果が表示されます。
 		//「ハローJAVA43」と表示とさせたいのですが、意図通りに動きません。正しく動作するように修正してください。
-		// 修正内容　1行目の文字列型を整数型に変更
-		System.out.println("『問5』");
+		//修正内容　1行目のStringをintに変更
 		int num = 20;
 		int num1 = 23;
 
@@ -102,7 +102,7 @@ public class Qes1_13 {
 		 * [概要]formatの通りコンソールに出力
 		 * [詳細]ローカル変数に『山田太郎 18歳 170.5cm 62.2kg 寿司』を代入し○○に入れる
 		 */
-		System.out.println("『問6』");
+
 		String name = "山田太郎";
 		int age = 18;
 		double height = 170.5;
@@ -119,41 +119,33 @@ public class Qes1_13 {
 		 * [概要]自己紹介に続いてBMIを出力
 		 * [詳細]6で作成した自己紹介に続いてBMIを出力させる（全て変数を使用する）
 		 */
-		System.out.println("『問7』");
 		int m = 100;
 		double bmi = weight / ((height / m) * (height / m));
-		// BMI値の出力
+		//BMI値の出力
 		BigDecimal bd = new BigDecimal(bmi);
 		BigDecimal bdBmi = bd.setScale(1, RoundingMode.UP);
 		System.out.println("初めまして" + name + "です");
 		System.out.println("年齢は" + age + "歳です");
 		System.out.println("身長は" + height + "cmです");
 		System.out.println("体重は" + weight + "kgです");
-		System.out.println("好きな食べ物は" + food + "です");
-		System.out.println("BMIは" + bdBmi.doubleValue() + "です" + "\n");
+		System.out.println("好きな食べ物は" + food + "です" + "\n");
+		System.out.println(bdBmi.doubleValue() +"\n");
 
 		//Q8
 		/*
 		 * [概要]宣言した変数に再代入
 		 * [詳細]6で宣言した変数に再代入しコンソールに出力させる
 		 */
-		System.out.println("『問8』");
-		// 初めまして鈴木一郎です
 		name = "鈴木一郎";
 		System.out.println("初めまして" + name + "です");
-		// 年齢は24歳です	
 		age = 24;
 		System.out.println("年齢は" + age + "歳です");
-		// 身長は168.5cmです	
 		height = 168.5;
 		System.out.println("身長" + height + "cmです");
-		// 体重は64.2kgです
 		weight = 64.2;
 		System.out.println("体重は" + weight + "kgです");
-		// 好きな食べ物はオムライスです
 		food = "オムライス";
 		System.out.println("好きな食べ物は" + food + "です");
-		// BMIは22.6です
 		bmi = 22.6;
 		System.out.println("BMIは" + bmi + "です" + "\n");
 	
@@ -163,33 +155,31 @@ public class Qes1_13 {
 		 * [概要]数値を和算で自己代入しコンソールに出力
 		 * [詳細]8で使用した変数【年齢・身長・体重】の数値を和算で自己代入し、下記の通りコンソールに出力させる
 		 */
-		System.out.println("『問9』");
-		// 初めまして鈴木一郎です
+
+//		name = 鈴木一郎
 		System.out.println("初めまして" + name + "です");
-		// 年齢は48歳です
+//		age = 24
 		age += 24;
 		System.out.println("年齢は" + age + "歳です");
-		// 身長337.0です
+//		height = 168.5
 		height += 168.5;
 		System.out.println("身長" + height + "cmです");
-		// 体重は128.4kgです
+//		weight = 64.2
 		weight += 64.2;
 		System.out.println("体重は" + weight + "kgです");
-		// 好きな食べ物はオムライスです
+//		food = オムライス
 		System.out.println("好きな食べ物は" + food + "です");
-		// BMIは11.31です
-		bmi = weight / ((height / m) * (height / m));
-		System.out.println("BMIは" + Math.ceil(bmi * 100) /100 + "です" + "\n");
+//		bmi= 22.6
+		bmi -= 11.3;
+		System.out.println("BMIは" + Math.round(bmi * 100) /100 + "です" + "\n");
 
 		//Q10
 		/*
 		 * [概要]25歳以上ならtrueを出力させる
 		 * [詳細]8で使用した年齢が25歳以上ならtrueが出力させる。ただしif文は使わない
 		 */
-		System.out.println("『問10』");
+		
 		age = 24;
-		height = 168.5;
-		weight = 64.2;
 		bo = (age >= 25);
 		System.out.println(bo);
 		System.out.println("\n");
@@ -199,17 +189,16 @@ public class Qes1_13 {
 		 * [概要]文字列型に変換し繋げて出力
 		 * [詳細]8で使用した【年齢・身長・体重】を文字列型に型変換し繋げて出力させる
 		 */
-		System.out.println("『問11』");
-		// 整数型の年齢を文字列型に変換
+		//age = 24
 		String strAge = String.valueOf(age);
 		System.out.println(strAge);
-		// 倍精度浮動小数点数型の身長を文字列型に変換
+		//height = 168.5
 		String strHeight = String.valueOf(height);
 		System.out.println(strHeight);
-		// 倍精度浮動小数点数型の体重を文字列型に変換
+		//weight = 64.2
 		String strWeight = String.valueOf(weight);
 		System.out.println(weight);
-		// 上記3つを常げて出力
+		//上記3つを常げて出力
 		System.out.println(strAge + strHeight + strWeight + "\n");
 
 		//Q12
@@ -217,12 +206,9 @@ public class Qes1_13 {
 		 * [概要]整数型に変換して出力
 		 * [詳細]11で変換した【年齢・身長】を整数型に変換して出力させる
 		 */
-		System.out.println("『問12』");
-		// 文字列型を整数型に変換
 		int intAge = Integer.parseInt(strAge);
 		System.out.println(intAge);
-		// 倍精度浮動小数点数型を
-		int intHeight = (int)Double.parseDouble(strHeight);
+		int intHeight = (int)height;
 		System.out.println(intHeight + "\n");
 		
 
@@ -231,7 +217,6 @@ public class Qes1_13 {
 		 * [概要]trueを出力
 		 * [詳細]12で変換した【年齢・身長】で【年齢が25もしくは身長が160以上】であればtrueを出力させる。ただしif文は使わない
 		 */
-		System.out.println("『問13』");
 		System.out.println(intAge == 25 || intHeight >= 160);
 
 	}
